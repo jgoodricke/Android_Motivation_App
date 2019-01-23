@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--TODO: Change this to a constraint layout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="horizontal">
+
+	<TextView
+		android:id="@+id/title_tv"
+		style="@style/ListText"
+		android:layout_weight="10"
+		android:text="Title"/>
+
+	<TextView
+		android:id="@+id/remaining_tv"
+		style="@style/ListText"
+		android:text="0/1"/>
+
+	<ImageButton
+		android:id="@+id/decrement_button"
+		style="@style/ListView"
+		app:srcCompat="@drawable/minus_math"/>
+
+	<ImageButton
+		android:id="@+id/increment_button"
+		style="@style/ListView"
+		app:srcCompat="@drawable/plus_math"/>
+
+</LinearLayout>

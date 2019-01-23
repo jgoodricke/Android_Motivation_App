@@ -1,0 +1,162 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:tools="http://schemas.android.com/tools"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent"
+			 tools:context="com.android.example.rewardify.MainDialogFragment">
+	<!--TODO: Add Styles for this view-->
+	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/main_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:padding="6dp">
+			<!--android:layout_centerVertical="true"-->
+			<!--android:layout_marginLeft="12dp"-->
+			<!--android:layout_marginRight="12dp"-->
+			<!--android:background="#FFFFFF"-->
+
+			TaskClassTask Name-->
+			<TableRow>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Task Name"/>
+			</TableRow>
+			<TableRow>
+				<EditText
+					android:id="@+id/name_et"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+			</TableRow>
+
+			<!--Repeats and Frequency-->
+			<TableRow>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Repeats"/>
+			</TableRow>
+			<!--Repeats Input-->
+			<TableRow>
+				<EditText
+					android:id="@+id/repeats_et"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:digits="0123456789."
+					android:inputType="number"/>
+				<!--TODO: Figure out how to center this horizontally-->
+				<!--TODO: Put this back in (Eventually)-->
+				<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+				<!--android:layout_width="wrap_content"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:orientation="horizontal">-->
+
+				<!--<Button-->
+				<!--android:layout_width="48dp"-->
+				<!--android:layout_height="48dp"-->
+				<!--android:text="-"-->
+				<!--android:onClick="decrementPts"/>-->
+
+				<!--<TextView-->
+				<!--android:id="@+id/repeats_tv"-->
+				<!--android:layout_width="wrap_content"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:paddingLeft="8dp"-->
+				<!--android:paddingRight="8dp"-->
+				<!--android:text="1"-->
+				<!--android:textColor="@android:color/black"-->
+				<!--android:textSize="16sp"/>-->
+
+				<!--<Button-->
+				<!--android:layout_width="48dp"-->
+				<!--android:layout_height="48dp"-->
+				<!--android:text="+"-->
+				<!--android:onClick="incrementPts"/>-->
+				<!--</LinearLayout>-->
+				<!--Frequency Dropdown-->
+				<Spinner
+					android:id="@+id/frequency_spinner"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"/>
+			</TableRow>
+
+			<!--EXP Points-->
+			<TableRow>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="EXP Points"/>
+			</TableRow>
+			<TableRow>
+				<!--Repeats Input-->
+				<EditText
+					android:id="@+id/exp_et"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:digits="0123456789."
+					android:inputType="number"/>
+
+				<!--TODO: Figure out how to center this horizontally-->
+				<!--TODO: Put this back in (eventually)-->
+				<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+				<!--android:layout_width="match_parent"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:orientation="horizontal"-->
+				<!--android:layout_weight="1">-->
+
+				<!--&lt;!&ndash;TODO: Put this back in&ndash;&gt;-->
+				<!--<Button-->
+				<!--android:layout_width="48dp"-->
+				<!--android:layout_height="48dp"-->
+				<!--android:text="-"-->
+				<!--android:onClick="decrementExp"/>-->
+
+				<!--<TextView-->
+				<!--android:id="@+id/exp_tv"-->
+				<!--android:layout_width="wrap_content"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:paddingLeft="8dp"-->
+				<!--android:paddingRight="8dp"-->
+				<!--android:text="1"-->
+				<!--android:textColor="@android:color/black"-->
+				<!--android:textSize="16sp"/>-->
+
+				<!--<Button-->
+				<!--android:layout_width="48dp"-->
+				<!--android:layout_height="48dp"-->
+				<!--android:text="+"-->
+				<!--android:onClick="incrementExp"/>-->
+				<!--</LinearLayout>-->
+			</TableRow>
+			<!--Buttons-->
+			<TableRow>
+
+				<Button
+					android:id="@+id/cancel_btn"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="cancel"/>
+				<!--TODO: DELETE THIS-->
+				<!--android:onClick="cancel"-->
+
+				<Button
+					android:id="@+id/ok_btn"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Ok" />
+				<!--TODO: DELETE THIS-->
+				<!--android:onClick="ok"-->
+			</TableRow>
+		</TableLayout>
+	</RelativeLayout>
+</FrameLayout>

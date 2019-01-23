@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:tools="http://schemas.android.com/tools"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent"
+			 tools:context="com.android.example.rewardify.MainDialogFragment">
+	<!--TODO: Add Styles for this view-->
+	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/main_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:padding="6dp">
+
+
+			TaskClassTask Name-->
+			<TableRow>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Reward Name"/>
+			</TableRow>
+			<TableRow>
+				<EditText
+					android:id="@+id/name_et"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+			</TableRow>
+
+			<!--EXP Points-->
+			<TableRow>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Reward Points"/>
+			</TableRow>
+			<TableRow>
+				<!--Repeats Input-->
+				<EditText
+					android:id="@+id/points_et"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:digits="0123456789."
+					android:inputType="number"/>
+			</TableRow>
+			<!--Buttons-->
+			<TableRow>
+
+				<Button
+					android:id="@+id/cancel_btn"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="cancel"/>
+
+				<Button
+					android:id="@+id/ok_btn"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Ok" />
+			</TableRow>
+		</TableLayout>
+	</RelativeLayout>
+</FrameLayout>
